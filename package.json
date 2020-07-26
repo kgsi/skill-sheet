@@ -1,0 +1,30 @@
+{
+  "name": "skill-sheet",
+  "version": "0.0.1",
+  "description": "",
+  "main": "firebaseFunctions.js",
+  "scripts": {
+    "dev": "next src/",
+    "build": "next build src/",
+    "start": "next start src/",
+    "serve": "npm run build && firebase emulators:start --only functions,hosting",
+    "shell": "npm run build && firebase functions:shell",
+    "deploy": "firebase deploy --only functions,hosting",
+    "logs": "firebase functions:log"
+  },
+  "dependencies": {
+    "@nivo/radar": "^0.62.0",
+    "firebase-admin": "^8.9.0",
+    "firebase-functions": "^3.3.0",
+    "next": "^9.3.4",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.26",
+    "@types/react": "^16.9.43",
+    "firebase-functions-test": "^0.1.6",
+    "firebase-tools": "^8.0.1",
+    "typescript": "^3.9.7"
+  }
+}
